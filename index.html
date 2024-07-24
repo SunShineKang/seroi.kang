@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>새로비</title>
+    <link rel="stylesheet" href="css/새로비.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="lib/jquery-3.7.1.min.js"></script>
+
+
+
+    <script>
+        $(function () {
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+
+            });
+
+
+            $('.btn1').mouseover(function () {
+
+                $('.image .bg1').fadeIn(500);
+                $('.image .bg2').fadeOut(500);
+                $('.image .bg3').fadeOut(500);
+                $('.image .bg4').fadeOut(500);
+
+
+
+
+                $(this).css({
+                    'background-color': 'yellow',
+                    'border-radius': '0 0 20px 0',
+                    'border': '1px solid #000'
+                });
+
+
+            });
+            $('.btn2').mouseover(function () {
+
+                $('.image .bg1').fadeOut(500);
+                $('.image .bg2').fadeIn(500);
+                $('.image .bg3').fadeOut(500);
+                $('.image .bg4').fadeOut(500);
+
+
+
+                $(this).css({
+                    'background-color': 'green',
+                    'border-radius': '20px 0 0 0',
+                    'border': '1px solid #000',
+
+
+                });
+            });
+            $('.btn3').mouseover(function () {
+
+                $('.image .bg1').fadeOut(500);
+                $('.image .bg2').fadeOut(500);
+                $('.image .bg3').fadeIn(500);
+                $('.image .bg4').fadeOut(500);
+                $(this).css({
+                    'background-color': 'blue',
+                    'border-radius': '0 20px 0 0',
+                    'border': '1px solid #000'
+                });
+            });
+            $('.btn4').mouseover(function () {
+
+                $('.image .bg1').fadeOut(500);
+                $('.image .bg2').fadeOut(500);
+                $('.image .bg3').fadeOut(500);
+                $('.image .bg4').fadeIn(500);
+                $(this).css({
+                    'background-color': '#9b2c2c',
+                    'border-radius': '0 0 0 20px ',
+                    'border': '1px solid #000'
+                });
+            });
+
+            $('.cont02 li').mouseleave(function () {
+
+
+
+
+                $('.cont02 li').css({
+
+
+                    'background-color': '#ff0000',
+                    'border-radius': '0',
+                    'border': '0'
+                });
+
+
+
+            });
+
+            $('.image img').mouseenter(function () {
+
+
+
+
+                $(this).css({
+
+
+                    'scale': '120%',
+                    'transition' : '0.7s'
+                    
+                });
+
+
+
+            });
+            $('.image img').mouseleave(function () {
+
+
+
+
+                $(this).css({
+
+
+                    'scale': '100%',
+                    'transition' : '0.7s'
+                    
+                });
+
+
+
+            });
+            $('.image01 img').mouseenter(function () {
+
+
+
+
+                $('.image01 img').css({
+
+
+                    'scale': '120%',
+                    'transition' : '0.7s'
+                    
+                });
+
+
+
+            });
+            $('.image01 img').mouseleave(function () {
+
+
+
+
+                $('.image01 img').css({
+
+
+                    'scale': '100%',
+                    'transition' : '0.7s'
+                    
+                });
+
+
+
+            });
+            $('.image02 img').mouseenter(function () {
+
+
+
+
+                $('.image02 img').css({
+
+
+                    'scale': '120%',
+                    'transition' : '0.7s'
+                    
+                });
+
+
+
+            });
+            $('.image02 img').mouseleave(function () {
+
+
+
+
+                $('.image02 img').css({
+
+
+                    'scale': '100%',
+                    'transition' : '0.7s'
+                    
+                });
+
+
+
+            });
+            $('.image03 img').mouseenter(function () {
+
+
+
+
+                $('.image03 img').css({
+
+
+                    'scale': '120%',
+                    'transition' : '0.7s'
+                    
+                });
+
+
+
+            });
+            $('.image03 img').mouseleave(function () {
+
+
+
+
+                $('.image03 img').css({
+
+
+                    'scale': '100%',
+                    'transition' : '0.7s'
+                    
+                });
+
+
+
+            });
+            $('.image04 img').mouseenter(function () {
+
+
+
+
+                $('.image04 img').css({
+
+
+                    'scale': '120%',
+                    'transition' : '0.7s'
+                    
+                });
+
+
+
+            });
+            $('.image04 img').mouseleave(function () {
+
+
+
+
+                $('.image04 img').css({
+
+
+                    'scale': '100%',
+                    'transition' : '0.7s'
+                    
+                });
+
+
+
+            });
+            $('.image05 img').mouseenter(function () {
+
+
+
+
+                $('.image05 img').css({
+
+
+                    'scale': '120%',
+                    'transition' : '0.7s'
+                    
+                });
+
+
+
+            });
+            $('.image05 img').mouseleave(function () {
+
+
+
+
+                $('.image05 img').css({
+
+
+                    'scale': '100%',
+                    'transition' : '0.7s'
+                    
+                });
+
+
+
+            });
+            $('.sns img').mouseenter(function () {
+
+
+
+
+                $(this).css({
+
+
+                    'box-shadow': '0 0px 10px 5px rgb(247, 152, 210, 1)',
+                    
+                    
+                });
+
+
+
+            });
+            $('.sns img').mouseleave(function () {
+
+
+
+
+                $(this).css({
+
+
+                    'box-shadow': '10px 10px 10px 2px rgba(0, 0, 0, 0)',
+                    
+                });
+
+
+
+            });
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="header header">
+        <div class="inner">
+            <figure>
+                <img src="img/Group 1가람로고.png" alt="로고이미지">
+            </figure>
+            <nav class="nav">
+                <ul class="gnb">
+                    <li class="li01"><a href="#">About</a></li>
+                    <li><a href="#">Notice</a></li>
+                    <li><a href="#">Story</a></li>
+                    <li><a href="#">Ask</a></li>
+                    
+                </ul>
+
+
+
+
+            </nav> <!-- nav end -->
+
+        </div> <!-- inner end -->
+
+
+    </div> <!-- header end -->
+
+    <section class="section01">
+        <div class="inner">
+            <div class="item01">
+                <h4>Always <br>
+
+                    Transforming<h4>
+
+                        <div class="mini_cont">
+                            <div class="cont01">
+                                <span>NEWS SEROVI</span>
+                            </div>
+                            <div class="cont02">
+                                <ul>
+                                    <li class="btn1"></li>
+                                    <li class="btn2"></li>
+                                    <li class="btn3"></li>
+                                    <li class="btn4"></li>
+                                </ul>
+                            </div> <!-- cont02 end -->
+                        </div> <!-- mini_cont end -->
+                        <figure class="image">
+                            <img class="bg1" src="img/악세사리-1.jpg" alt="이미지">
+                            <img class="bg2" src="img/악세사리-2.jpg" alt="이미지">
+                            <img class="bg3" src="img/악세사리-3.jpg" alt="이미지">
+                            <img class="bg4" src="img/악세사리-4.jpg" alt="이미지">
+
+                        </figure>
+
+            </div> <!-- item01 end -->
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/악세사리1.jpg" alt="이미지"></div>
+                    <div class="swiper-slide"><img src="img/악세사리2.jpg" alt="이미지"></div>
+                    <div class="swiper-slide"><img src="img/악세사리3.jpg" alt="이미지"></div>
+                    <div class="swiper-slide"><img src="img/악세사리4.jpg" alt="이미지"></div>
+                    <div class="swiper-slide"><img src="img/악세사리5.jpg" alt="이미지"></div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section02">
+        <div class="wrap">
+            <div class="text">
+                <h5>SEROVI <br> COMMUNICATION</h5>
+
+                <strong>THIS PLACE THAT IS ALWAYS COMFORTABLE</strong> <br>
+                <button><a href="#">바로가기</a></button>
+            </div>
+
+            <div class="image01"><img src="img/2page-1.jpg" alt="이미지"></div>
+            <div class="image02"><img src="img/2page-2.jpg" alt="이미지"></div>
+            <div class="image03"><img src="img/2page-3.jpg" alt="이미지"></div>
+            <div class="image04"><img src="img/2page-4.jpg" alt="이미지"></div>
+            <div class="image05"><img src="img/2page-5.jpg" alt="이미지"></div>
+            <div class="sns">
+                <a href="#"><img src="img/sns1.png" alt="sns"></a>
+                <a href="#"><img src="img/sns2.png" alt="sns"></a>
+                <a href="#"><img src="img/sns3.png" alt="sns"></a>
+                <a href="#"><img src="img/sns4.jpg" alt="sns"></a>
+                <a href="#"><img src="img/sns5.png" alt="sns"></a>
+            </div>
+            <div class="click">
+
+                <img src="img/클릭.png" alt="클릭">
+                <strong>CLICK!!</strong>
+            </div>
+        </div> <!-- wrap end -->
+
+    </section> <!-- secrion02 end -->
+
+    <section class="section03">
+
+        <div class="item_wrap">
+            <div class="item01">
+                <span>세로비 철학</span>
+                <h2>휴식이 능률을 올린다</h2>
+                <p>안녕하세요. 저는 새로비예요. <br>  여러분은 저를 처음 보셨겠지만 <br> 사실 저는 양재사옥이 생긴 이래로<br>
+                    계속 여기를 지키며 여러분과 함께해왔답니다. <br><br> 그리고 이제부터 시작될 로비 리노베이션 기간 <br> 여러분의 회사 생활을 돕기 위해 나타났어요!</p>
+                <button><a href="#">자세히보기</a></button>
+            </div> <!-- item01 end -->
+            <div class="item02">
+                <figure>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/tXM_1Zam5nY?si=iad8FniZZ9E3NzJp&autoplay=1&mute=1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </figure>
+            </div>
+
+        </div> <!-- item_wrap end -->
+
+    </section> <!-- section03 end -->
+
+    <section class="section04">
+        <div class="title">
+            <div class="text">
+                <h4><span>매력적이고 감각있는</span> <br> 공간을 창조합니다.</h4>
+            </div> <!-- text end -->
+            <button><a href="#">더보기 +</a></button>
+        </div> <!-- title end -->
+        <div class="image_wrap">
+            <div class="image_cont">
+                <div class="image"><img src="img/로비공사2.jpg" alt=""></div>
+                <div>
+                    <h5>도면설계</h5>
+                </div>
+            </div> <!-- image_cont end -->
+            <div class="image_cont">
+                <div class="image"><img src="img/로비공사1.jpg" alt=""></div>
+                <div>
+                    <h5>기존 현장 철거</h5>
+                </div>
+            </div> <!-- image_cont end -->
+            <div class="image_cont">
+                <div class="image"><img src="img/로비공사3.jpg" alt=""></div>
+                <div>
+                    <h5>세로이의 편안한 휴식공간</h5>
+                </div>
+            </div> <!-- image_cont end -->
+
+        </div> <!-- image_wrap -->
+
+
+    </section> <!-- section04 end -->
+
+    <section class="section05">
+        <h4>도움이 필요하세요?</h4>
+        <div class="inner">
+
+            <div class="que_wrap">
+                <div><a href="#"><img src="img/아이콘1.png" alt="아이콘"></a></div>
+                <p>온라인 메뉴얼</p>
+            </div> <!-- que_wrap end -->
+            <div class="que_wrap">
+                <div><a href="#"><img src="img/아이콘2.png" alt="아이콘"></a></div>
+                <p>온라인 메뉴얼</p>
+            </div> <!-- que_wrap end -->
+            <div class="que_wrap">
+                <div><a href="#"><img src="img/아이콘3.png" alt="아이콘"></a></div>
+                <p>온라인 메뉴얼</p>
+            </div> <!-- que_wrap end -->
+            <div class="que_wrap">
+                <div><a href="#"><img src="img/아이콘4.png" alt="아이콘"></a></div>
+                <p>온라인 메뉴얼</p>
+            </div> <!-- que_wrap end -->
+        </div> <!-- inner end -->
+        <div class="footer">
+            <div class="inner">
+                <div class="text_wrap">
+                    <div class="text01">
+                        <h6>세로비 고객센터문의,진행사항문의</h6>
+                        <h3>1660-25XX</h3>
+                    </div> <!-- text01 end -->
+                    <div class="text02">
+                        <ul>
+                            <li>상담시간 월~금 09:00~18:00 </li>
+                            <li>(점심시간 12:00~13:00,월/공휴일 휴뮤)</li>
+                        </ul>
+                    </div> <!-- text02 end -->
+                </div> <!-- text_wrap -->
+                <div class="text_wrap">
+                    <div class="text01">
+                        <h6>공사중인 로비문의</h6>
+                        <h3>1588-86XX</h3>
+                    </div> <!-- text01 end -->
+                    <div class="text02">
+                        <ul>
+                            <li>상담시간 월~금 08:30~17:00 </li>
+                            <li>(점심시간 12:00~13:00,월/공휴일 휴뮤)</li>
+                        </ul>
+                    </div> <!-- text02 end -->
+                </div> <!-- text_wrap -->
+            </div> <!-- inner end -->
+        </div>
+    </section> <!-- section05 -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
